@@ -1,10 +1,15 @@
 {
     "name": "forceui-root",
     "private": true,
+    "type": "module",
     "scripts": {
-        "build": "cd client && npm install && npm run build && cd ../server && npm install"
+        "build": "cd client && npm install && npm run build"
     },
     "engines": {
-        "node": "18.x"
+        "node": "22.x"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2"
     }
 }
