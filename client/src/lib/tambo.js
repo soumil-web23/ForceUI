@@ -1,6 +1,6 @@
 export const processIntent = async (input) => {
     // Fetch mock data
-    const response = await fetch('http://localhost:3001/analytics');
+    const response = await fetch('/api/analytics');
     const data = await response.json();
 
     const lowerInput = input.toLowerCase();
